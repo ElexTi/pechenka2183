@@ -1,0 +1,142 @@
+@primary: #6f767e;
+@second: #4ba815;
+@first: #89ac75;
+@light-text: #ffffff9c;
+@text: #ffffff;
+html{
+    font-size: 16px;
+}
+h1{
+    font-size: 5rem;
+}
+h5{
+    font-size: 0.6rem;
+}
+h4{
+    font-size: 0.8rem;
+}
+a{
+    font-size: 1rem;
+}
+@font-face: {
+    font-family: 'Open Sans', sans-serif;
+    src: url('/pechenka2183/new-classroom-project/static/fonts/OpenSans-Regular.ttf');
+    font-weight: normal; 
+    font-style: normal;
+}
+h1, h2, h3, h4, h5, h6, a, p, span {
+    font-family: 'Open Sans', sans-serif;
+    color: @text
+}
+.on1, .on2, .on3, .on4, .on5{
+    width: 5px;
+    height: 5px;
+    border: 1px solid greenyellow;
+}
+.off1, .off2, .off3, .off4, .off5 {
+    width: 5px;
+    height: 5px;
+    border: 1px solid red;
+}
+.logo{
+    font-family: 'Open Sans', sans-serif;
+    color: @text;
+    width: 37%;
+}
+.phone-number{
+    font-family: 'Open Sans', sans-serif;
+    color: @text;
+}
+body {
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #283029;
+}
+header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    padding: 0px 6%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.horizontal-menu {
+    display: flex;
+    justify-content: space-between;
+    li:not(:last-child){
+        margin-right: 40px;
+    }
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 0.9rem;
+        color: @light-text;
+    }
+    li:hover a, a:visited{
+        color: @primary;
+        cursor: pointer;
+    }
+}
+
+main{
+    width: 1200px;
+    justify-content: space-between;
+    padding-top: 60px;
+    height: calc(100vh - 60px);
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.left-side-1 {
+    width: 100px;
+    top: 101px;
+    height: 100%;
+    left: 0px;
+    position: fixed;
+}
+.first-screen {
+    height: calc(100vh - 80px);
+    position: relative;
+}
+.center-1 {
+    width: 500px;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    top: 140px;
+}
+.right-side-1{
+    width: 700px;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.arrows{
+    margin-top: 70px;
+}
+.left-arrow {
+    width: 50px;
+    height: 50px;
+}
+.right-arrow {
+    width: 50px;
+    height: 50px;
+}
+.card{
+    padding: 10px 40px;
+    background-color: @first;
+    width: 300px;
+    height: 200px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
